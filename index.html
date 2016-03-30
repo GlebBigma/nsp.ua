@@ -17,29 +17,35 @@
 	<body>
 		<div class="b-top-bar">
 			<div class="container">
-				<ul class="list-inline pull-left b-topbar__list">
-					<li><a href="#">О компании NSP</a></li>
-					<li><a href="#">Доставка и оплата</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
-				<ul class="list-inline pull-right b-topbar__list e-right">
-					<li><a href="#">Войти как дистрибьютор</a></li>
-				</ul>
+				<div class="row">
+					<div class="col-xs-5 col-sm-4 col-md-5 col-lg-4">
+						<ul class="list-inline b-topbar__list">
+							<li><a href="#">О компании NSP</a></li>
+							<li><a href="#">Доставка и оплата</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-offset-3 col-xs-4 col-sm-3 col-md-3 col-lg-offset-5 col-lg-3">
+						<ul class="list-inline pull-right b-topbar__list e-right">
+							<li><a href="#">Войти как дистрибьютор</a></li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="b-secondary-bar text-center">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-4">
-						<img src="images/main-logo.png" alt="Logo" />
+					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+						<img src="images/main-logo.png" class="logo img-responsive" alt="Logo" />
 					</div>
-					<div class="col-xs-5">
+					<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
 						<form class="form-inline b-secondary-bar__form-search" role="search" action="" method="post">
 							<input type="text" class="form-control b-secondary-bar__input-search" id="b-secondary-bar__input-search">
 							<button type="submit" class="btn btn-green">Найти</button>
 						</form>
 					</div>
-					<div class="col-xs-3">
+					<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
 						<a href="tel:+380445830000" class="b-secondary-bar__phone">(044) 583-00-00</a>
 					</div>
 				</div>
@@ -66,6 +72,18 @@
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</nav>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-3">
+					<div class="b-sidebar">
+						<ul class="b-sidebar__content">
+							<li><a href="#">Способы доставки</a></li>
+							<li><a href="#">Способы оплаты</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
