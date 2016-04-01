@@ -11,7 +11,7 @@
 		<link rel="stylesheet/less" href="less/main.less">
 		<!-- JS -->
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 		<script src="js/less.min.js"></script>
 	</head>
 	<body>
@@ -89,7 +89,7 @@
 						<div class="row b-shipping-and-payment__content">
 							<h4 class="b-shipping-and-payment__title">Способы доставки</h4>
 							<div class="col-xs-4">
-								<div class="b-shipping-and-payment__item">
+								<div class="b-shipping-and-payment__item" data-toggle="modal" data-target="#Modal-NP">
 									<img src="images/delivery-img-NP.png" class="img-responsive b-shipping-and-payment__img" alt="Novaya-Pochta" />
 									<h5 class="b-shipping-and-payment__item-title">Новая Почта</h5>
 									<p class="b-shipping-and-payment__item-content">
@@ -100,7 +100,7 @@
 								</div>
 							</div>
 							<div class="col-xs-4">
-								<div class="b-shipping-and-payment__item">
+								<div class="b-shipping-and-payment__item" data-toggle="modal" data-target="#Modal-address">
 									<img src="images/delivery-img-address.png" class="img-responsive b-shipping-and-payment__img" alt="Adresnaya-Dostavka" />
 									<h5 class="b-shipping-and-payment__item-title">Адресная доставка по Киеву и пригороду</h5>
 									<p class="b-shipping-and-payment__item-content">
@@ -112,7 +112,7 @@
 								</div>
 							</div>
 							<div class="col-xs-4">
-								<div class="b-shipping-and-payment__item">
+								<div class="b-shipping-and-payment__item" data-toggle="modal" data-target="#Modal-ME">
 									<img src="images/delivery-img-ME.png" class="img-responsive b-shipping-and-payment__img" alt="Mist-Ekspress" />
 									<h5 class="b-shipping-and-payment__item-title">Мист Экспресс</h5>
 									<p class="b-shipping-and-payment__item-content">
@@ -126,7 +126,7 @@
 						<div class="row b-shipping-and-payment__content">
 							<h4 class="b-shipping-and-payment__title">Способы доставки</h4>
 							<div class="col-xs-4">
-								<div class="b-shipping-and-payment__item">
+								<div class="b-shipping-and-payment__item" data-toggle="modal" data-target="#Modal-payment">
 									<img src="images/payment-img-cash.png" class="img-responsive b-shipping-and-payment__img" alt="Oplata-Nalichnimi" />
 									<h5 class="b-shipping-and-payment__item-title">Наличная</h5>
 									<p class="b-shipping-and-payment__item-content">
@@ -253,6 +253,87 @@
 				</div>
 				<div class="col-xs-offset-5 col-xs-3">
 					<img src="images/img-pay.png" class="img-responsive" alt="Img-Pay" />
+				</div>
+			</div>
+		</div>
+		<!-- MODALS -->
+		<!-- Modal Novaya Pochta -->
+		<div class="modal fade" id="Modal-NP" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="ModalLabel">Доставка в отделения Новой Почты по всей Украине</h4>
+					</div>
+					<div class="modal-body">
+						<p>Доставка <b>БЕСПЛАТНО</b> при заказе более 700 грн.</p>
+						<p>При заказе до 700 грн. - стоимость доставки <b>40 грн</b>.</p>
+						<p>Заказы, согласованные до 13-00, будут доставлены до отделения Новой Почты в областных центрах на следующий рабочий день. В остальные города и населенные пункты доставка до отделения Новой Почты занимает 1-3 рабочих дня.</p>
+						<p>После отправки заказа Служба Доставки NSP сообщит Вам по SMS номер декларации посылки для получения и отслеживания заказа. Новая Почта уведомит Вас по SMS о готовности выдать товар из выбранного отделения.</p>
+						<p>Перед оплатой Вы сможете осмотреть продукцию, убедиться в целостности упаковки.</p>
+						<img src="images/delivery-img-NP.png" class="img-responsive center-block e-modal-image" alt="Novaya-Pochta"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal Adresnaya Dostavka -->
+		<div class="modal fade" id="Modal-address" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="ModalLabel">Адресная доставка по Киеву и пригороду</h4>
+					</div>
+					<div class="modal-body">
+						<p>Доставка <b>БЕСПЛАТНО</b> при заказе более 700 грн.</p>
+						<p>При заказе до 700 грн. - стоимость доставки <b>40 грн</b>.</p>
+						<p>Стоимость быстрой доставки по Киеву в течение 2-х часов – 50 грн.</p>
+						<p>Доставка по Киеву осуществляется в рабочие дни с 11:00 до 20:00 и в субботу с 11:00 до 16:00.</p>
+						<p>Заказы, размещенные до 12:00, обычно доставляются в тот же день. Менеджеры Службы Доставки NSP сразу согласуют время доставки. Перед выездом курьер позвонит Вам.</p>
+						<p>Доставка в  Коцюбинское, Петропавловскую Борщаговку, Пущу-Водицу, с. Троещина, Софиевскую Борщаговку, Чайки, Быковню, пос. Радистов осуществляется курьером Мист Экспресс по адресу до двери или в отделение Новой Почты в сроки, установленные курьерскими службами.</p>
+						<p>В отдалённые районы Киева (Пирогово, Чапаевка, Корчеватое, Осокорки (Нижние сады и ул. Садовые), Бортничи, Рембаза, ДВРЗ, ул. Пуховская, ул. Богатырская, 32 (больница)) доставка осуществляется с 15:00 до 20:00.</p>
+						<p>Перед оплатой Вы сможете осмотреть продукцию, убедиться в целостности упаковки. Время, выделенное на выдачу продукции курьером – 10 минут.</p>
+						<img src="images/delivery-img-address.png" class="img-responsive center-block e-modal-image" alt="Addresnaya Dostavka" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal Mist Ekspress -->
+		<div class="modal fade" id="Modal-ME" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="ModalLabel">Доставка на дом по всей Украине</h4>
+					</div>
+					<div class="modal-body">
+						<p>Доставка <b>БЕСПЛАТНО</b> при заказе более 700 грн.</p>
+						<p>При заказе до 700 грн. - стоимость доставки <b>40 грн</b>.</p>
+						<p>Доставка в областные центры занимает 1-3 рабочих дня, в другие населённые пункты - смотрите на сайте <a href="https://meest-express.com.ua/ua/calc" target="_blank">Мист Экспресс</a>.</p>
+						<p>После отправки заказа Служба Доставки NSP сообщит Вам по SMS номер декларации посылки для отслеживания заказа.</p>
+						<p>Перед выездом курьер Мист Экспресс согласует с Вами по телефону доставку.</p>
+						<p>Перед оплатой Вы сможете осмотреть продукцию, убедиться в целостности упаковки.</p>
+						<img src="images/delivery-img-ME.png" class="img-responsive center-block e-modal-image" alt="Addresnaya Dostavka" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal Payment -->
+		<div class="modal fade" id="Modal-payment" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="ModalLabel">Доставка на дом по всей Украине</h4>
+					</div>
+					<div class="modal-body">
+						<p>Оплата наличными при получении продукции (курьер или отделение Новой Почты) возможна во всех населенных пунктах на территории Украины.</p>
+						<p>Оплата производится исключительно в национальной валюте.  В подтверждение оплаты мы выдаем Вам товарный чек.</p>
+						<ul>
+							<li>Вы не платите комиссию банку за перечисление денег</li>
+							<li>Вы получите товар быстрее, поскольку Служба Доставки NSP сразу отправляет Вам продукцию, не ожидая предоплаты.</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
