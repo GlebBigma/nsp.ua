@@ -417,16 +417,26 @@ body, a {
 // --- block under footer ---
 .b-copyright {
 	padding: 30px 0;
+	@media(max-width: @screen-xs-max) {
+		.text-center();
+	}
 	.e-copyright {
 		font-family: 'Raleway-Medium';
 		font-size: 12px;
 		color: #7d7d7d;
 		margin-bottom: 0;
+		@media(max-width: @screen-xs-max) {
+			margin-bottom: 20px;
+		}
 		a {
 			color: #00c8c8;
 		}
 	}
-
+	.img-pay {
+		@media(max-width: @screen-xs-max) {
+			.center-block();
+		}
+	}
 }
 
 // --- Modals ---
