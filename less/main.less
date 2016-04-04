@@ -10,7 +10,8 @@ body, a {
 }
 
 .block-content {
-	padding: 60px 0;
+	padding-top: 60px;
+	padding-bottom: 60px;
 	.block-content__title {
 		margin-top: 0;
 		font-family: 'Raleway-SemiBold';
@@ -180,6 +181,7 @@ body, a {
 	.logo {
 		@media(max-width: @screen-xs-min) {
 			.center-block();
+			margin-bottom: 10px
 		}
 		@media(max-width: @screen-sm-min) {
 			.center-block();
@@ -330,6 +332,9 @@ body, a {
 		background-color: #484848;
 		margin-bottom: 25px;
 		.b-footer__form-subscribe {
+			background-image: url(../images/icon-envelope.png);
+			background-repeat: no-repeat;
+			background-position: 57px 62px;
 			background-color: #2b2b2b;
 			padding-bottom: 40px;
 			.b-footer__form-subscribe__title {
@@ -416,7 +421,8 @@ body, a {
 
 // --- block under footer ---
 .b-copyright {
-	padding: 30px 0;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	@media(max-width: @screen-xs-max) {
 		.text-center();
 	}
