@@ -328,6 +328,9 @@ body, a {
 	padding-bottom: 35px;
 	.b-footer-logo {
 		margin-bottom: 55px;
+		@media(max-width: @screen-xs-max) {
+		    margin-bottom: 35px;
+		}
 	}
 	.b-info {
 		font-family: 'Roboto-Regular';
@@ -343,12 +346,19 @@ body, a {
 		padding: 15px;
 		background-color: #484848;
 		margin-bottom: 25px;
+		@media(max-width: @screen-xs-max) {
+	        margin-top: 25px;
+			padding-bottom: 10px;
+		}
 		.b-footer__form-subscribe {
 			background-image: url(../images/icon-envelope.png);
 			background-repeat: no-repeat;
 			background-position: 57px 62px;
 			background-color: #2b2b2b;
 			padding-bottom: 40px;
+			@media(max-width: @screen-xs-max) {
+				padding-bottom: 10px;
+			}
 			.b-footer__form-subscribe__title {
 				padding-top: 20px;
 				padding-bottom: 20px;
@@ -379,12 +389,24 @@ body, a {
 					color: #fff;
 				    box-shadow: none;
 					margin-right: 5px;
+					@media(max-width: @screen-xs-max) {
+				        width: 100%;
+					}
+				}
+				.btn-white {
+					@media(max-width: @screen-xs-max) {
+				        .center-block();
+					    margin-top: 20px;
+					}
 				}
 			}
 		}
 	}
 	.b-social {
 		margin-bottom: 40px;
+		@media(max-width: @screen-xs-max) {
+			.text-center();
+		}
 		li {
 			padding: 0;
 			padding-right: 7px;
