@@ -406,6 +406,7 @@ body, a {
 		margin-bottom: 40px;
 		@media(max-width: @screen-xs-max) {
 			.text-center();
+			margin-bottom: 10px;
 		}
 		li {
 			padding: 0;
@@ -427,6 +428,11 @@ body, a {
 			font-size: 18px;
 			color: #ebebeb;
 			margin-bottom: 25px;
+			@media(max-width: @screen-xs-max) {
+				margin-top: 25px;
+				font-size: 15px;
+				margin-bottom: 15px;
+			}
 		}
 		a { // Styles for menu links in footer
 			display: block;
@@ -446,6 +452,13 @@ body, a {
 			color: #808080;
 			.media-object {
 				margin-top: 5px;
+			}
+			.media-body {
+				p {
+					@media(max-width: @screen-xs-max) {
+						margin-bottom: 0;
+					}
+				}
 			}
 			a {
 				margin: 0;
