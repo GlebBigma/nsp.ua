@@ -313,6 +313,9 @@ body, a {
 		.b-shipping-and-payment__content {
 			padding-top: 40px;
 			margin-left: 0px;
+			@media(max-width: @screen-xs-max) {
+				padding-top: 20px;
+			}
 			.b-shipping-and-payment__title {
 				margin-top: 0px;
 				font-family: 'Raleway-Bold';
@@ -327,6 +330,9 @@ body, a {
 				line-height: 1.5;
 				@media(max-width: @screen-xs-max) {
 					margin-bottom: 40px;
+				}
+				@media (min-width: 760px) and (max-width: 1020px) {
+					text-align: center;
 				}
 				.b-shipping-and-payment__img {
 					max-height: 121px;
