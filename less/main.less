@@ -12,6 +12,10 @@ body, a {
 .block-content {
 	padding-top: 60px;
 	padding-bottom: 60px;
+	@media(max-width: @screen-xs-max) {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
 	.block-content__title {
 		margin-top: 0;
 		font-family: 'Raleway-SemiBold';
@@ -19,6 +23,8 @@ body, a {
 		color: #313131;
 		@media(max-width: @screen-xs-max) {
 			.text-center();
+			padding-top: 0;
+			padding-bottom: 0;
 		}
 	}
 }
@@ -250,6 +256,13 @@ body, a {
 	border-right: 0;
 	border-bottom: 2px solid #6dad1a;
     margin-bottom: 0px;
+	.navbar-header {
+		.navbar-toggle {
+			&:focus {
+				background-color: #fff;
+			}
+		}
+	}
 	.navbar-nav {
 		text-transform: uppercase;
 		font-size: 13px;
@@ -259,6 +272,9 @@ body, a {
 			letter-spacing: 1px;
 			display: inline-block;
 			float: none;
+			@media (min-width: @screen-xs-min) and (max-width: @screen-md-min) {
+				display: block;
+			}
 			a {
 				color: #313131;
 				&:hover {
